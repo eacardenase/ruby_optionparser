@@ -1,0 +1,21 @@
+#!/Users/ecardenas/.rbenv/shims/ruby
+
+require "optparse"
+
+parser = OptionParser.new
+
+# p ARGV
+
+parser.on("-x", "Whether to X") do |value|
+  p ["x", value]
+end
+
+parser.on("-y", "Whether to Y") do |value|
+  p ["y", value]
+end
+
+parser.on("-z", "Whether to Z") do |value|
+  p ["z", value]
+end
+
+p parser.parse!
