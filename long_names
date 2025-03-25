@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/Users/ecardenas/.rbenv/shims/ruby
 
 require "optparse"
 
@@ -12,4 +12,5 @@ parser.on("--y1%", "--z2#", "Two long names") do |value|
   p ["--y1% pr --z2#", value]
 end
 
+parser.require_exact = true
 parser.parse!
